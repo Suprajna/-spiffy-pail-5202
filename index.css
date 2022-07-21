@@ -258,3 +258,41 @@
       background-color: white;
 
     }
+    .slider1 {
+      width: 850px;
+      height: 370px;
+      background-color:red;
+      margin-left: 100px;
+    
+      margin-top: 20px;
+      text-align: center;
+      overflow: hidden;
+    }
+    .image-container1 {
+      width: 13600px;
+      background-color:blue;
+      height: 370px;
+      clear: both;
+      position: relative;
+      -webkit-transition: left 2s;
+      -moz-transition: left 2s;
+      -o-transition: left 2s;
+      transition: left 2s;
+    }
+    .slide1 {
+      float: left;
+      margin: 0px;
+      padding: 0px;
+      position: relative;
+      width: 850px;
+      height:370px;
+    }
+    #slide-first:target ~ .image-container {
+      left: 0px;
+    }
+    #slide-second:target ~ .image-container {
+      left: -850px;
+    }
+    #slide-third:target ~ .image-container {
+      left: -1700px;
+    }
