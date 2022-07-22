@@ -1,0 +1,59 @@
+ #head > div {
+            display: grid;
+            justify-content: center;
+            justify-items: center;
+            height: 50px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            overflow: hidden;
+            background-color: white;
+            position: fixed;
+            top: 0; 
+            width: 100%; 
+        }
+        #card{
+            width:20%;
+            height: auto;
+            border: 1px solid transparent;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 20px;
+            background-color:white;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            
+        }
+        #card>form{
+            display: grid;
+            margin-left: 40px;
+            margin-right: 40px;
+          
+           
+          
+            
+        }
+        #card>form>h3{
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+        #card>form>p{
+            font-size: 13px;
+        }
+        input[type=submit]{
+            background-color: rgba(151, 151, 223, 0.514);
+            width:40%;
+            margin: auto;
+            cursor: pointer;
+            padding: 4px 4px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        input[type=email]{
+            padding-top:10px;
+            padding-bottom:10px
+        }
+        input[type=password]{
+            padding-top:10px;
+            padding-bottom:10px
+        }
+
+    

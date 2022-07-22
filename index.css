@@ -59,19 +59,48 @@
       }
       #list{
         display: flex;
-        justify-content: center;
-        align-items: center;
-      
+        border:1px solid;
+        width:130px;
+        margin: auto;
+     
       }
-      #list>select{
-        border-color: transparent;
-       margin-right: 20px;
+      #list>p:nth-child(2){
+        margin-left: 50px;
+
       }
+     #fruits {
+        display: none;
+      }
+      #veg{
+        display: none;
+      }
+      .fru:hover +.fruits {
+        display: block;
+      }
+      #fruits {
+        opacity: 0.0;
+        -webkit-transition: all 500ms ease-in-out;
+        -moz-transition: all 500ms ease-in-out;
+        -ms-transition: all 500ms ease-in-out;
+        -o-transition: all 500ms ease-in-out;
+        transition: all 500ms ease-in-out;
+    }
+    #hover1 {
+        width:80px;
+        height:20px;
+        background-color:green;
+     
+    }
+    #hover1:hover + #fruits {
+        opacity: 1.0;
+    }
       .slider {
-        width: 850px;
+        width: 2550px;
         height: 370px;
         background-color:white;
-        margin-left: 100px;
+        margin-left: 70px;
+     
+       
       
         margin-top: 20px;
         text-align: center;
@@ -87,6 +116,7 @@
         -moz-transition: left 2s;
         -o-transition: left 2s;
         transition: left 2s;
+       
       }
       .slide {
         float: left;
@@ -95,6 +125,7 @@
         position: relative;
         width: 850px;
         height:370px;
+       
       }
       #slide-1:target ~ .image-container {
         left: 0px;
@@ -138,7 +169,7 @@
 
       .buttons {
         position: absolute;
-       bottom: 220px;
+       bottom: 200px;
        left:500px
       }
       .buttons a {
@@ -149,12 +180,17 @@
         background-color: rgb(144, 238, 219);
       }
      .col{
-        width:32%;
+        width:74%;
         display: flex;
        flex-direction: column;
-       position: relative;
-       left:1000px;
-       bottom:370px
+    
+     margin-left: 70px;
+     margin-top: 20px;
+       
+     }
+     #second{
+      display: flex;
+     
      }
    
     .slider1 {
