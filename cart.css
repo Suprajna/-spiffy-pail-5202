@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#head > div {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+}
+#head{
+    margin-bottom: 70px;
+}
+#filter{
+    padding: 10px 50px;
+    border-color: #ff5a78;
+    margin-bottom: 15px;
+}
+#filter:hover{
+    background-color:#ff5a78 ;
+    color: white;
+}
+#products{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    row-gap: 30px;
+}
+#products>div>img{
+    width: 90%;
+    transition:all 0.3s ease;
+}
+#products>div:hover{
+    width: 85%;
+}
