@@ -1,5 +1,5 @@
 let productsCont=document.getElementById("products");
-let cartLs=JSON.parse(localStorage.getItem("cart-page"))||[];
+let cartLS=JSON.parse(localStorage.getItem("cart"))||[];
 function displayProducts(productData){
 productsCont.innerHTML="";
 productData.forEach(function(elem){
@@ -26,7 +26,7 @@ productData.forEach(function(elem){
     let buy=document.createElement("button");
     buy.innerText="Order Now"
     buy.addEventListener("click",function(){
-        window.location.href="payment-page.html";
+        window.location.href="payment.html";
     })
    
 
@@ -36,17 +36,17 @@ productData.forEach(function(elem){
       Delete(elem.productID);
     })
 
-    product.append(img,name,brand,price,catagory,buy,DeleteCart);
+    product.append(img,name,price,catagory,buy,DeleteCart);
     productsCont.append(product)
 })
 }
-   displayProducts(cartLs);
+   displayProducts(cartLS);
 
    function Delete(id){
-   let deleted=cartLs.filter(function(elem){
+   let deleted=cartLS.filter(function(elem){
       return elem.productID != id;
    })
-   cartLs=deleted;
-   localStorage.setItem("cart-page",JSON.stringify(cartLs));
-   displayProducts(cartLs);
+   cartLS=deleted;
+   localStorage.setItem("cart",JSON.stringify(cartLS));
+   displayProducts(cartLS);
    }

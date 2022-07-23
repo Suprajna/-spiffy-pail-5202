@@ -81,14 +81,40 @@
    
    
 }
+#group{
+    border:1px solid  #b3b1b1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+}
+
 #filter{
     padding: 10px 50px;
-   width:30%;
+   width:6%;
     margin-bottom: 15px;
+    box-sizing: content-box;
+   border-color: transparent;
+    font-size: 15px;
+    color: #878484;
+}
+#filter1{
+    padding: 10px 50px;
+   width:6%;
+    margin-bottom: 15px;
+    box-sizing: content-box;
+    border-color: transparent;
+    font-size: 15px;
+    color: #878484;
+    
 }
 #filter:hover{
-    background-color: #4FBB90;;;
-    color: white;
+  
+    color:#4FBB90 ;
+
+}
+#filter1:hover{
+    color:#4FBB90 ;
 }
 #products{
     display: grid;
@@ -127,6 +153,7 @@ h1{
     color: #424242;
     margin-bottom: 5px;
     line-height: 2rem;
+    
 }
 #products>div>img{
     width: 100%;
