@@ -26,7 +26,7 @@ productData.forEach(function(elem){
     let buy=document.createElement("button");
     buy.innerText="Order Now"
     buy.addEventListener("click",function(){
-        window.location.href="http://127.0.0.1:5500/pay.html";
+        window.location.href="payment.html";
     })
    
 
