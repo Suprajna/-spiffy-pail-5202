@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    
+    <div id="main">
+        <form>
+            <h4>ENTER YOUR PAYMENT DETAILS</h4>
+            <input id="nam" type="text" name="enter name" placeholder="Enter your name">
+            <input id="card" type="number" placeholder="Enter card number 1234">
+            <input id="cvv" type="number" placeholder="Enter CVV 123 ">
+            <input id="exp" type="text" placeholder="Enter expiry date 05/25"> 
+           
+            <input type="submit">
+            <button onClick="btnFun()">SEND OTP</button>
+            <h4>Enter OTP  to payment successful</h4>
+            <input id="otp" type="number" placeholder="Enter OTP">
+            <button onClick="otpFun()">VERIFY OTP</button>
+        </form>
+    </div>
+    <script src="payment.js" async defer></script>
+</body>
+</html>
+
