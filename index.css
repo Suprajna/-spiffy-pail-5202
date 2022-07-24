@@ -1,3 +1,9 @@
+
+*{
+  margin:0px;
+  padding:0px
+}
+
 .img{
     width:20px; 
     height:20px;
@@ -355,6 +361,7 @@ color:white;
   font-family: sans-serif;
  margin-left: 50px;
   font-size: 35px;
+  margin-top: 70px;
   
 }
 #products2>div{
@@ -503,7 +510,7 @@ color:white;
 
       .buttons {
         position: absolute;
-       bottom: 180px;
+       bottom: 220px;
        left:440px;
 
       }
@@ -568,7 +575,7 @@ color:white;
       left: -1700px;
     }
     #mid{
-
+margin-top: 60px;
       display: flex;
     }
     #mid>div:nth-child(2){
@@ -625,6 +632,7 @@ color:white;
   display: flex;
   justify-content: center;
   align-items: center;
+ 
 }
 
 #box>div>img{
@@ -639,20 +647,51 @@ color:white;
 }
 #photo>p{
   width:80%;
+  
 }
    #footer{
     display: flex;
-  
-   
-  
+    background-color:rgb(13,82,65) ;
+   width:100%;
+   margin: auto;
+   line-height: 1.5rem;
+  margin-top: -6px;
    color: white;
-   border: 1px solid black;
+  
    
    }
    #footer>div{
-    width:30%
+    width:20%;
+    margin-left:50px;
+   ;
    }
    #photo{
     
     width:40%
+   }
+   #last{
+    color: white;
+    width:100%;
+    background-color:rgb(13,82,65) ;
+    margin-top: -30px;
+   
+    padding-top: 20px;
+    margin: auto;
+   }
+   #last>div{
+    margin-left:50px;
+   }
+   #image{
+    background-image: url('https://webasset.fraazo.com/production/a72cf5cd03bd56f4be37fa1c4ce7062d.svg');
+   
+   }
+   #last>div>p:nth-child(2){
+   margin-top: 20px;
+    line-height: 1.5rem;
+    text-align: left;
+   }
+   #last>div>p:nth-child(3){
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
    }
