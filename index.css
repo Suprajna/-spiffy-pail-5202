@@ -27,6 +27,8 @@ margin-left:20px
     justify-content: space-around;
     padding-top: 20px;
     margin: auto;
+    position: fixed;
+    background-color: white;
     
 }
 #input{
@@ -90,6 +92,7 @@ margin-left:20px
       color: #333;
       padding-right: 0px;
       color: rgb(141, 141, 141);
+      margin-top: 100px;
      
   }
   ul li{

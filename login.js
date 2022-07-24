@@ -9,7 +9,7 @@ form.addEventListener("submit",function(event){
     if(checkLogin(data.email,data.password)===true){
         localStorage.setItem("login",JSON.stringify(signUpData));
         alert("Log In Successfully");
-        window.location.href="index1.html";
+        window.location.href="index.html";
     }else{
         alert("Wrong Email or Password");
     }
